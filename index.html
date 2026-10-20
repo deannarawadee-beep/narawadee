@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="เว็บไซต์เพื่อการศึกษาเกี่ยวกับศิลปะและวัฒนธรรมไทย จิตรกรรม ประติมากรรม สถาปัตยกรรม นาฏศิลป์ ประเพณี อาหาร และภูมิปัญญาไทย">
+<title>ศิลป์ไทย | ศิลปะและวัฒนธรรมไทย</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--maroon:#651b2b;--maroon2:#842d3c;--gold:#c89b3c;--gold-light:#f1dfad;--cream:#fffaf0;--paper:#fffdf8;--ink:#30251f;--muted:#766a60;--line:#eadfce;--shadow:0 12px 35px rgba(74,35,25,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:var(--cream);color:var(--ink);font-family:"Sarabun",sans-serif;line-height:1.75}h1,h2,h3,h4,.brand{font-family:"Prompt",sans-serif;line-height:1.35}a{color:inherit}button,input{font:inherit}.skip-link{position:absolute;left:-999px;top:0;background:#fff;padding:10px;z-index:99}.skip-link:focus{left:10px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,250,240,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav-wrap{max-width:1200px;margin:auto;padding:10px 22px;display:flex;align-items:center;gap:18px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;color:var(--maroon);white-space:nowrap}.brand-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:var(--maroon);color:var(--gold-light);font-size:22px;border:2px solid var(--gold)}nav{display:flex;gap:5px;align-items:center;flex:1;justify-content:flex-end;flex-wrap:wrap}nav a{text-decoration:none;padding:7px 10px;border-radius:999px;font-size:13px;color:#55463c;transition:.2s}nav a:hover,nav a:focus{background:var(--maroon);color:#fff}.menu-toggle{display:none;border:1px solid var(--line);background:white;color:var(--maroon);border-radius:10px;padding:7px 12px}
+.hero{position:relative;overflow:hidden;background:linear-gradient(115deg,rgba(48,13,24,.91),rgba(101,27,43,.83) 50%,rgba(94,51,27,.58)),url('https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=2000&q=85') center 48%/cover;color:white;min-height:490px;display:flex;align-items:center}.hero:after{content:"";position:absolute;inset:14px;border:1px solid rgba(241,223,173,.42);pointer-events:none}.hero-inner{max-width:1200px;width:100%;margin:auto;padding:75px 40px;position:relative;z-index:1}.eyebrow{color:var(--gold-light);font-weight:600;letter-spacing:2px;font-size:14px}.hero h1{font-size:clamp(36px,6vw,68px);max-width:750px;margin:14px 0}.hero p{font-size:18px;max-width:650px;color:#fff5e7}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:999px;padding:12px 22px;background:var(--gold);color:#321d12;text-decoration:none;font-weight:700;cursor:pointer;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px #0002}.btn.outline{background:transparent;color:white;border:1px solid #f1dfad}.btn.secondary{background:#f5ead6;color:var(--maroon)}.ornament{color:var(--gold);font-size:22px;letter-spacing:8px;margin:10px 0}
+.wrap{max-width:1200px;margin:auto;padding:0 22px}.intro-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:-35px;position:relative;z-index:2}.intro-box{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow);display:flex;gap:13px;align-items:flex-start}.intro-box .symbol{font-size:28px;color:var(--gold);line-height:1}.intro-box h3{font-size:16px;margin:0 0 5px;color:var(--maroon)}.intro-box p{margin:0;color:var(--muted);font-size:14px}
+section.content-section{padding:76px 0 20px}.section-head{text-align:center;max-width:760px;margin:0 auto 28px}.kicker{font-size:13px;letter-spacing:2px;color:var(--maroon2);font-weight:700}.section-head h2{font-size:clamp(27px,4vw,40px);color:var(--maroon);margin:8px 0 12px}.section-head p{color:var(--muted);margin:0}.search-panel{max-width:650px;margin:24px auto 34px;display:flex;gap:8px}.search-panel input{flex:1;min-width:0;border:1px solid #d8c7ae;background:white;border-radius:999px;padding:13px 18px;outline-color:var(--gold)}.search-panel button{border:0;border-radius:999px;padding:0 20px;background:var(--maroon);color:white;cursor:pointer}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 5px 20px rgba(74,35,25,.045);transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.card-media{height:220px;position:relative;background:#e8dac4;overflow:hidden}.card-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.card:hover .card-media img{transform:scale(1.045)}.card-media .img-caption{position:absolute;bottom:0;left:0;right:0;padding:18px 14px 10px;background:linear-gradient(transparent,rgba(25,12,8,.72));color:white;font-size:12px}.card-body{padding:22px;display:flex;flex-direction:column;flex:1}.tag{display:inline-flex;align-self:flex-start;background:#f4e8cc;color:#74431f;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700}.card h3{margin:12px 0 8px;color:var(--maroon);font-size:21px}.card p{margin:0 0 12px;color:#5e5148}.card .more{display:none;margin-top:0;color:#65574e}.card.expanded .more{display:block}.read-more{margin-top:auto;align-self:flex-start;background:transparent;border:0;color:var(--maroon);font-weight:700;cursor:pointer;padding:8px 0}.read-more:hover{text-decoration:underline}.source{font-size:11px;color:#8a7c70;margin-top:10px}.source a{color:inherit}.no-results{display:none;text-align:center;padding:35px;background:white;border-radius:16px;color:var(--muted)}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;background:#f4ead7;border-radius:24px;padding:28px;margin-top:56px}.feature img{width:100%;height:330px;object-fit:cover;border-radius:16px}.feature h3{color:var(--maroon);font-size:27px;margin:8px 0 12px}.feature p{color:#5f5146}.feature ul{padding-left:22px}.feature li{margin:6px 0}
+.quiz-area{background:linear-gradient(135deg,#5d1727,#7b2834);color:white;padding:56px 0;margin-top:65px}.quiz-area .section-head h2{color:white}.quiz-area .section-head p{color:#f6e8d8}.quiz-card{max-width:800px;margin:auto;background:#fffaf0;color:var(--ink);border-radius:20px;padding:28px;box-shadow:var(--shadow)}.quiz-progress{font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:12px}.progress-track{height:7px;background:#eadfce;border-radius:99px;margin:8px 0 22px;overflow:hidden}.progress-bar{height:100%;width:0;background:var(--gold);transition:width .25s}.quiz-card h3{font-size:21px;color:var(--maroon)}.options{display:grid;gap:10px}.option{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);padding:12px 14px;border-radius:12px;cursor:pointer;transition:.2s}.option:hover{background:#f7edd9}.option input{margin-top:7px;accent-color:var(--maroon)}.quiz-actions{display:flex;justify-content:space-between;gap:10px;margin-top:22px;flex-wrap:wrap}.quiz-feedback{margin-top:15px;font-weight:600}.quiz-result{display:none;text-align:center;padding:24px}.quiz-result strong{font-size:42px;color:var(--maroon);display:block}
+.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:25px}.about-box{background:white;border:1px solid var(--line);border-radius:18px;padding:26px}.about-box h3{color:var(--maroon);margin-top:0}.references{padding-left:20px}.references li{margin:8px 0}.references a{color:var(--maroon);overflow-wrap:anywhere}
+footer{margin-top:70px;background:#32151b;color:#fff2df;padding:35px 22px;text-align:center;border-top:4px solid var(--gold)}footer p{margin:6px auto;max-width:850px}footer .footer-small{font-size:12px;color:#d7c2b1}.back-top{position:fixed;right:20px;bottom:20px;width:46px;height:46px;border:0;border-radius:50%;background:var(--gold);color:#321d12;font-size:21px;box-shadow:var(--shadow);cursor:pointer;display:none;z-index:15}.back-top.show{display:block}
+@media(max-width:1000px){.nav-wrap{flex-wrap:wrap}.brand{flex:1}.menu-toggle{display:block}nav{display:none;flex-basis:100%;justify-content:flex-start;padding:4px 0 10px}nav.open{display:flex}nav a{font-size:14px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.intro-strip{grid-template-columns:1fr 1fr}.intro-box:last-child{grid-column:1/-1}}
+@media(max-width:650px){.nav-wrap{padding:9px 15px}.brand{font-size:15px}.brand-mark{width:36px;height:36px}.hero{min-height:460px}.hero-inner{padding:65px 27px}.hero p{font-size:16px}.hero:after{inset:8px}.intro-strip{grid-template-columns:1fr;margin-top:-20px}.intro-box:last-child{grid-column:auto}.wrap{padding:0 16px}section.content-section{padding-top:58px}.cards{grid-template-columns:1fr}.card-media{height:235px}.feature{grid-template-columns:1fr;padding:16px;gap:16px}.feature img{height:230px}.about-grid{grid-template-columns:1fr}.search-panel{padding:0 4px}.search-panel button{padding:0 15px}.quiz-card{padding:19px}.quiz-actions .btn{flex:1}.hero-actions .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+<header>
+  <div class="nav-wrap">
+    <a class="brand" href="#home" aria-label="ศิลป์ไทย หน้าแรก"><span class="brand-mark">✿</span><span>ศิลป์ไทย <small style="display:block;font-size:10px;font-weight:400;color:#78665b">ศิลปะและวัฒนธรรมไทย</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰ เมนู</button>
+    <nav id="mainNav" aria-label="เมนูหลัก">
+      <a href="#home">หน้าแรก</a><a href="#painting">จิตรกรรม</a><a href="#sculpture">ประติมากรรม</a><a href="#architecture">สถาปัตยกรรม</a><a href="#performing">นาฏศิลป์</a><a href="#traditions">ประเพณี</a><a href="#food-dress">อาหารและการแต่งกาย</a><a href="#wisdom">ภูมิปัญญา</a><a href="#quiz">แบบทดสอบ</a><a href="#about">เกี่ยวกับเรา</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="eyebrow">THAI ARTS & CULTURE · เรียนรู้รากเหง้า เข้าใจคุณค่า</div>
+    <div class="ornament">❧ ✦ ❧</div>
+    <h1>ศิลปะและ<br>วัฒนธรรมไทย</h1>
+    <p>สัมผัสความงดงามของภูมิปัญญาไทย ผ่านงานศิลป์ สถาปัตยกรรม การแสดง ประเพณี และวิถีชีวิตที่สืบทอดจากรุ่นสู่รุ่น</p>
+    <div class="hero-actions"><a class="btn" href="#explore">เริ่มสำรวจวัฒนธรรมไทย ↘</a><a class="btn outline" href="#quiz">ลองทำแบบทดสอบ</a></div>
+  </div>
+</section>
+<div class="wrap">
+  <div class="intro-strip" aria-label="จุดเด่นของเว็บไซต์">
+    <div class="intro-box"><span class="symbol">❖</span><div><h3>เรียนรู้หลากหลายแขนง</h3><p>ตั้งแต่งานจิตรกรรมไปจนถึงอาหารและประเพณีท้องถิ่น</p></div></div>
+    <div class="intro-box"><span class="symbol">❀</span><div><h3>เห็นคุณค่าความแตกต่าง</h3><p>วัฒนธรรมไทยมีความหลากหลายตามพื้นที่และชุมชน</p></div></div>
+    <div class="intro-box"><span class="symbol">✧</span><div><h3>ร่วมสืบสานอย่างเข้าใจ</h3><p>เรียนรู้ด้วยความเคารพ พร้อมเปิดใจต่อการเปลี่ยนแปลง</p></div></div>
+  </div>
+</div>
+
+<section class="content-section" id="explore">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">DISCOVER THAI HERITAGE</div><h2>สำรวจมรดกศิลป์ไทย</h2><p>เลือกชมหมวดหมู่ที่สนใจ อ่านเนื้อหาเพิ่มเติม หรือค้นหาคำสำคัญได้จากช่องค้นหา</p></div>
+  <div class="search-panel"><input id="searchInput" type="search" placeholder="ค้นหา เช่น โขน วัดไทย ผ้าไหม..." aria-label="ค้นหาหัวข้อ"><button id="searchButton">ค้นหา</button></div>
+  <div class="cards" id="cultureCards">
+   <article class="card" id="painting" data-search="จิตรกรรมไทย ภาพเขียน ภาพฝาผนัง ลายไทย วัด">
+    <div class="card-media"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Phra%20Kaew%20-%20Murals%20%283%29.jpg" alt="จิตรกรรมฝาผนังภายในวัดพระแก้ว" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80'"><div class="img-caption">ตัวอย่างจิตรกรรมฝาผนังไทย</div></div>
+    <div class="card-body"><span class="tag">งานทัศนศิลป์</span><h3>จิตรกรรมไทย</h3><p>งานศิลปะที่ใช้สีและเส้นสร้างภาพ เรื่องราวในจิตรกรรมไทยดั้งเดิมมักเกี่ยวข้องกับพุทธศาสนา วรรณคดี และวิถีชีวิต</p><div class="more"><p><strong>ลักษณะสำคัญ:</strong> มีการจัดองค์ประกอบและลวดลายตามแบบแผนของแต่ละยุคและสำนักช่าง ตัวอย่างที่รู้จักคือจิตรกรรมฝาผนังในวัดพระแก้ว ซึ่งมีภาพเล่าเรื่องรามเกียรติ์</p><p><strong>คุณค่า:</strong> เป็นทั้งงานศิลป์และหลักฐานที่ช่วยศึกษาความเชื่อ สังคม และการแต่งกายในอดีต</p></div><button class="read-more" aria-expanded="false">อ่านเพิ่มเติม ＋</button><div class="source">ภาพ: Wikimedia Commons — ตรวจสอบเครดิตและใบอนุญาตของไฟล์ก่อนนำไปใช้ซ้ำ</div></div>
+   </article>
+   <article class="card" id="sculpture" data-search="ประติมากรรมไทย พระพุทธรูป งานปั้น แกะสลัก">
+    <div class="card-media"><img loading="lazy" src="https://images.unsplash.com/photo-1606293926075-69a00dbdasb3?auto=format&fit=crop&w=900&q=80" alt="พระพุทธรูปเป็นตัวอย่างงานประติมากรรมไทย" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&w=900&q=80'"><div class="img-caption">พระพุทธรูปและงานประติมากรรม</div></div>
+    <div class="card-body"><span class="tag">งานสามมิติ</span><h3>ประติมากรรมไทย</h3><p>ศิลปะการสร้างรูปทรงสามมิติด้วยการปั้น แกะสลัก หล่อ หรือประกอบวัสดุ มีทั้งงานทางศาสนาและงานตกแต่ง</p><div class="more"><p><strong>ตัวอย่าง:</strong> พระพุทธรูป งานแกะสลักไม้ หน้าบัน และรูปปั้นประดับสถาปัตยกรรม รูปแบบแตกต่างกันไปตามยุคสมัยและภูมิภาค</p><p><strong>คุณค่า:</strong> สะท้อนฝีมือช่าง ความศรัทธา และพัฒนาการทางศิลปะของสังคมไทย</p></div><button class="read-more" aria-expanded="false">อ่านเพิ่มเติม ＋</button><div class="source">ภาพประกอบจาก Unsplash; ใช้เป็นภาพประกอบเชิงตัวอย่าง</div></div>
+   </article>
+   <article class="card" id="architecture" data-search="สถาปัตยกรรมไทย วัด พระราชวัง เรือนไทย อาคาร">
+    <div class="card-media"><img loading="lazy" src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80" alt="สถาปัตยกรรมวัดไทยและหลังคาประดับลวดลาย" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&w=900&q=80'"><div class="img-caption">วัดและสถาปัตยกรรมไทย</div></div>
+    <div class="card-body"><span class="tag">ศิลปะการออกแบบ</span><h3>สถาปัตยกรรมไทย</h3><p>การออกแบบอาคารและพื้นที่ที่สัมพันธ์กับภูมิอากาศ ความเชื่อ วัสดุท้องถิ่น และการใช้ชีวิตของผู้คน</p><div class="more"><p><strong>ตัวอย่าง:</strong> วัด พระบรมมหาราชวัง เรือนไทยยกพื้น และอาคารพื้นถิ่น แต่ละแห่งมีรายละเอียดเฉพาะตามยุคและชุมชน</p><p><strong>คุณค่า:</strong> แสดงความรู้ด้านช่าง การปรับตัวกับสภาพแวดล้อม และความงามที่ผสมผสานประโยชน์ใช้สอยกับความเชื่อ</p></div><button class="read-more" aria-expanded="false">อ่านเพิ่มเติม ＋</button><div class="source">ภาพประกอบจาก Unsplash; ควรตรวจสอบสถานที่ของภาพก่อนอ้างชื่อเฉพาะ</div></div>
+   </article>
+   <article class="card" id="performing" data-search="นาฏศิลป์ ดนตรีไทย โขน รำ ระบำ เครื่องดนตรี">
+    <div class="card-media"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Khon%20performance%20in%20Thailand.jpg" alt="นักแสดงโขนสวมเครื่องแต่งกายและหัวโขน" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80'"><div class="img-caption">นาฏศิลป์ไทยและการแสดงโขน</div></div>
+    <div class="card-body"><span class="tag">ศิลปะการแสดง</span><h3>นาฏศิลป์และดนตรีไทย</h3><p>การแสดงไทยใช้ท่ารำ ดนตรี จังหวะ เครื่องแต่งกาย และเรื่องราวร่วมกันเพื่อสื่ออารมณ์และความหมาย</p><div class="more"><p><strong>ตัวอย่าง:</strong> โขน ละคร รำ ระบำ และการบรรเลงวงปี่พาทย์หรือวงเครื่องสาย เครื่องดนตรีมีทั้งประเภทดีด สี ตี และเป่า</p><p><strong>คุณค่า:</strong> ถ่ายทอดวรรณคดี ความเชื่อ และทักษะที่ต้องอาศัยการฝึกฝนอย่างต่อเนื่อง</p></div><button class="read-more" aria-expanded="false">อ่านเพิ่มเติม ＋</button><div class="source">ภาพ: Wikimedia Commons — โปรดตรวจสอบหน้าไฟล์และใบอนุญาต</div></div>
+   </article>
+   <article class="card" id="traditions" data-search="ประเพณีไทย สงกรานต์ ลอยกระทง บุญบั้งไฟ ภาคเหนือ อีสาน">
+    <div class="card-media"><img loading="lazy" src="https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?auto=format&fit=crop&w=900&q=80" alt="กระทงดอกไม้และใบตองสำหรับประเพณีลอยกระทง" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=900&q=80'"><div class="img-caption">ประเพณีและงานเทศกาลไทย</div></div>
+    <div class="card-body"><span class="tag">วิถีชุมชน</span><h3>ประเพณีไทย</h3><p>ประเพณีเกิดจากความเชื่อ ศาสนา ฤดูกาล และวิถีชีวิตของชุมชน จึงมีรูปแบบหลากหลายทั่วประเทศ</p><div class="more"><p><strong>ตัวอย่าง:</strong> สงกรานต์ซึ่งเกี่ยวข้องกับปีใหม่ไทยและการแสดงความเคารพต่อผู้ใหญ่ ลอยกระทงที่มีรูปแบบแตกต่างกันตามท้องถิ่น และประเพณีบุญในชุมชนอีสาน</p><p><strong>คุณค่า:</strong> ส่งเสริมความสัมพันธ์ในชุมชนและการถ่ายทอดความทรงจำร่วมกัน ควรเข้าร่วมอย่างเคารพพื้นที่และสิ่งแวดล้อม</p></div><button class="read-more" aria-expanded="false">อ่านเพิ่มเติม ＋</button><div class="source">ภาพประกอบเชิงเทศกาลจาก Unsplash; ภาพอาจไม่ใช่ภาพเหตุการณ์เฉพาะในไทย</div></div>
+   </article>
+   <article class="card" id="food-dress" data-search="อาหารไทย การแต่งกาย ชุดไทย ผ้าไทย อาหารภาคเหนือ อีสาน ใต้">
+    <div class="card-media"><img loading="lazy" src="https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=900&q=80" alt="อาหารไทยหลากหลายชนิดจัดเสิร์ฟบนโต๊ะ" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?auto=format&fit=crop&w=900&q=80'"><div class="img-caption">อาหารไทยกับวิถีชีวิต</div></div>
+    <div class="card-body"><span class="tag">วิถีชีวิต</span><h3>อาหารและการแต่งกายไทย</h3><p>อาหารและเครื่องแต่งกายสะท้อนภูมิอากาศ วัตถุดิบ ภูมิปัญญา และความหลากหลายของแต่ละภูมิภาค</p><div class="more"><p><strong>ตัวอย่าง:</strong> อาหารไทยมีรสชาติและวัตถุดิบหลากหลาย เช่น แกง ข้าวยำ น้ำพริก และอาหารท้องถิ่น ส่วนผ้าไทยมีทั้งผ้าฝ้าย ผ้าไหม ผ้าทอมือ และชุดไทยหลายรูปแบบ</p><p><strong>คุณค่า:</strong> เป็นมรดกทางความรู้และฝีมือที่ยังพัฒนาให้เข้ากับชีวิตร่วมสมัยได้</p></div><button class="read-more" aria-expanded="false">อ่านเพิ่มเติม ＋</button><div class="source">ภาพอาหารจาก Unsplash; ภาพใช้ประกอบแนวคิดเรื่องอาหารไทย</div></div>
+   </article>
+   <article class="card" id="wisdom" data-search="ภูมิปัญญาไทย หัตถกรรม จักสาน ผ้าไหม งานช่าง">
+    <div class="card-media"><img loading="lazy" src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=900&q=80" alt="งานฝีมือและวัสดุธรรมชาติที่เกี่ยวข้องกับภูมิปัญญาท้องถิ่น" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=80'"><div class="img-caption">งานฝีมือและภูมิปัญญาชุมชน</div></div>
+    <div class="card-body"><span class="tag">ความรู้จากชุมชน</span><h3>ภูมิปัญญาไทย</h3><p>ความรู้และทักษะที่ชุมชนสั่งสม ถ่ายทอด และปรับใช้ในการดำรงชีวิต เช่น การทอผ้า การจักสาน และงานช่างฝีมือ</p><div class="more"><p><strong>ตัวอย่าง:</strong> เครื่องจักสานจากไม้ไผ่ การย้อมสีจากวัสดุธรรมชาติ ผ้าไหมไทย เครื่องปั้นดินเผา และงานแกะสลัก ล้วนมีเทคนิคต่างกันตามทรัพยากรและท้องถิ่น</p><p><strong>คุณค่า:</strong> สร้างอัตลักษณ์ชุมชน สนับสนุนอาชีพ และเป็นองค์ความรู้ที่ควรเรียนรู้จากช่างฝีมือและผู้สืบทอดโดยตรง</p></div><button class="read-more" aria-expanded="false">อ่านเพิ่มเติม ＋</button><div class="source">ภาพจาก Unsplash ใช้เป็นภาพประกอบแนวคิด ไม่ได้ยืนยันว่าเป็นหัตถกรรมไทยชนิดใดโดยเฉพาะ</div></div>
+   </article>
+  </div>
+  <div class="no-results" id="noResults">ไม่พบหัวข้อที่ตรงกับคำค้น ลองใช้คำอื่น เช่น “โขน” หรือ “ผ้าไทย”</div>
+
+  <div class="feature">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1540611025311-01df3cef54b5?auto=format&fit=crop&w=1200&q=85" alt="รายละเอียดศิลปะและสถาปัตยกรรมไทย" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=85'">
+    <div><div class="kicker">PRESERVE & PASS ON</div><h3>อนุรักษ์อย่างเข้าใจ สืบสานอย่างสร้างสรรค์</h3><p>การอนุรักษ์วัฒนธรรมไม่ใช่เพียงการเก็บรักษาสิ่งเก่า แต่รวมถึงการทำความเข้าใจบริบท ให้เกียรติผู้สร้างสรรค์ และสนับสนุนให้ความรู้เหล่านี้ดำรงอยู่ในชีวิตประจำวัน</p><ul><li>เรียนรู้ประวัติและความหมายก่อนนำไปใช้</li><li>ให้เครดิตศิลปิน ช่างฝีมือ และแหล่งข้อมูล</li><li>เข้าร่วมกิจกรรมวัฒนธรรมด้วยความเคารพ</li><li>เลือกใช้ทรัพยากรอย่างรับผิดชอบและลดขยะในงานประเพณี</li></ul><a class="btn secondary" href="#about">ดูแหล่งเรียนรู้เพิ่มเติม</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="quiz-area" id="quiz">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker" style="color:#f1dfad">LEARN & TEST</div><h2>ทดสอบความรู้ศิลปะและวัฒนธรรมไทย</h2><p>ตอบคำถาม 5 ข้อ แล้วตรวจสอบคะแนนของตนเอง</p></div>
+  <div class="quiz-card" id="quizCard">
+    <div class="quiz-progress"><span id="questionCount">ข้อ 1 จาก 5</span><span id="scoreLive">ตอบถูก 0 ข้อ</span></div><div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+    <div id="questionArea"><h3 id="questionText"></h3><div class="options" id="options"></div><div class="quiz-feedback" id="feedback" aria-live="polite"></div></div>
+    <div class="quiz-actions"><button class="btn secondary" id="restartQuiz" type="button">เริ่มใหม่</button><button class="btn" id="nextQuestion" type="button">ตรวจคำตอบ</button></div>
+    <div class="quiz-result" id="quizResult"><strong id="finalScore"></strong><h3 id="resultTitle">ทำแบบทดสอบเสร็จแล้ว</h3><p id="resultMessage"></p><button class="btn" id="tryAgain" type="button">ทำแบบทดสอบอีกครั้ง</button></div>
+  </div>
+ </div>
+</section>
+
+<section class="content-section" id="about">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">ABOUT THIS WEBSITE</div><h2>เกี่ยวกับเว็บไซต์และแหล่งเรียนรู้</h2><p>เว็บไซต์นี้จัดทำขึ้นเพื่อการศึกษา เนื้อหาสรุปเป็นภาพรวม และวัฒนธรรมแต่ละพื้นที่อาจมีรายละเอียดแตกต่างกัน</p></div>
+  <div class="about-grid">
+   <div class="about-box"><h3>วัตถุประสงค์</h3><p>เผยแพร่ความรู้เบื้องต้นเกี่ยวกับศิลปะและวัฒนธรรมไทย ส่งเสริมให้ผู้เรียนเห็นคุณค่าของความหลากหลายทางวัฒนธรรม และร่วมสืบสานภูมิปัญญาอย่างเคารพและรับผิดชอบ</p><h3>วิธีใช้เว็บไซต์</h3><p>เลือกหมวดหมู่จากเมนูด้านบน ใช้ช่องค้นหาเพื่อค้นหาคำสำคัญ กด “อ่านเพิ่มเติม” เพื่อดูรายละเอียด และทำแบบทดสอบเพื่อทบทวนความรู้</p><p><strong>หมายเหตุ:</strong> รูปภาพบางภาพใช้เพื่อประกอบความเข้าใจในหัวข้อ ไม่ได้ยืนยันว่าเป็นสถานที่หรือกิจกรรมเฉพาะตามคำบรรยาย โปรดตรวจสอบหน้าไฟล์ต้นทางก่อนนำไปเผยแพร่ซ้ำ</p></div>
+   <div class="about-box"><h3>แหล่งข้อมูลแนะนำ</h3><ul class="references">
+    <li><a href="https://www.finearts.go.th/" target="_blank" rel="noopener noreferrer">กรมศิลปากร</a> — ความรู้ด้านโบราณสถาน โบราณวัตถุ และมรดกศิลปวัฒนธรรม</li>
+    <li><a href="https://ich.unesco.org/" target="_blank" rel="noopener noreferrer">UNESCO Intangible Cultural Heritage</a> — มรดกภูมิปัญญาทางวัฒนธรรม</li>
+    <li><a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> — คลังสื่อพร้อมข้อมูลใบอนุญาตรายไฟล์</li>
+    <li><a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a> — ภาพถ่ายประกอบ โดยควรตรวจสอบเงื่อนไขการใช้งาน</li>
+   </ul><p class="source">ภาพจากแหล่งภายนอกต้องใช้อินเทอร์เน็ตในการโหลด การระบุแหล่งที่มานี้ไม่ใช่การยืนยันใบอนุญาตของทุกภาพ</p></div>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="ornament">❧ ✦ ❧</div><p><strong>“ร่วมอนุรักษ์ศิลปะและวัฒนธรรมไทย เพื่อสืบสานเอกลักษณ์ไทยให้คงอยู่สืบไป”</strong></p><p class="footer-small">เว็บไซต์เพื่อการศึกษา · ศิลป์ไทย | สร้างด้วย HTML, CSS และ JavaScript</p><p class="footer-small">ภาพประกอบจาก Wikimedia Commons และ Unsplash ตามลิงก์ที่ระบุในแต่ละหมวด โปรดตรวจสอบสิทธิ์และเครดิตก่อนนำไปใช้ซ้ำ</p></footer>
+<button class="back-top" id="backTop" aria-label="กลับไปด้านบน" title="กลับไปด้านบน">↑</button>
+<script>
+// เมนูสำหรับหน้าจอขนาดเล็ก
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.getElementById('mainNav');
+menuToggle.addEventListener('click', () => {
+  const open = mainNav.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(open));
+});
+mainNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+  mainNav.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}));
+
+// ปุ่มอ่านเพิ่มเติมของแต่ละการ์ด
+document.querySelectorAll('.read-more').forEach(button => {
+  button.addEventListener('click', () => {
+    const card = button.closest('.card');
+    const expanded = card.classList.toggle('expanded');
+    button.textContent = expanded ? 'ย่อเนื้อหา −' : 'อ่านเพิ่มเติม ＋';
+    button.setAttribute('aria-expanded', String(expanded));
+  });
+});
+
+// ค้นหาจากชื่อ คำอธิบาย และคำสำคัญที่กำหนดไว้
+const searchInput = document.getElementById('searchInput');
+const searchButton = document.getElementById('searchButton');
+const cards = [...document.querySelectorAll('#cultureCards .card')];
+const noResults = document.getElementById('noResults');
+function runSearch() {
+  const query = searchInput.value.trim().toLocaleLowerCase('th');
+  let visible = 0;
+  cards.forEach(card => {
+    const text = (card.innerText + ' ' + card.dataset.search).toLocaleLowerCase('th');
+    const match = !query || text.includes(query);
+    card.style.display = match ? '' : 'none';
+    if (match) visible++;
+  });
+  noResults.style.display = visible ? 'none' : 'block';
+}
+searchButton.addEventListener('click', runSearch);
+searchInput.addEventListener('keydown', event => { if (event.key === 'Enter') runSearch(); });
+searchInput.addEventListener('input', runSearch);
+
+// ปุ่มกลับด้านบน
+const backTop = document.getElementById('backTop');
+window.addEventListener('scroll', () => backTop.classList.toggle('show', window.scrollY > 450));
+backTop.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+
+// แบบทดสอบความรู้ 5 ข้อ
+const questions = [
+  {q:'จิตรกรรมไทยหมายถึงงานศิลปะประเภทใดเป็นหลัก?', options:['การสร้างภาพด้วยสีและเส้น','การสร้างอาคาร','การปรุงอาหาร','การเล่นเครื่องดนตรี'], answer:0, explain:'จิตรกรรมเป็นงานสร้างภาพด้วยสี เส้น และองค์ประกอบทางทัศนศิลป์'},
+  {q:'ข้อใดเป็นตัวอย่างของประติมากรรมไทย?', options:['บทเพลงพื้นบ้าน','พระพุทธรูป','บทละคร','ผ้าทอ'], answer:1, explain:'พระพุทธรูปเป็นตัวอย่างหนึ่งของงานประติมากรรมสามมิติ'},
+  {q:'โขนจัดอยู่ในศิลปะแขนงใด?', options:['สถาปัตยกรรม','จักสาน','นาฏศิลป์และการแสดง','จิตรกรรม'], answer:2, explain:'โขนเป็นศิลปะการแสดงที่ผสมผสานท่าทาง ดนตรี และเรื่องราว'},
+  {q:'ข้อใดเป็นตัวอย่างของภูมิปัญญาไทย?', options:['การทอผ้าและจักสาน','การค้นหาด้วยอินเทอร์เน็ตเท่านั้น','การจราจรบนถนน','การพิมพ์ข้อความ'], answer:0, explain:'การทอผ้าและจักสานเป็นความรู้และทักษะที่ชุมชนสั่งสมและถ่ายทอด'},
+  {q:'การอนุรักษ์วัฒนธรรมอย่างรับผิดชอบควรทำอย่างไร?', options:['นำผลงานคนอื่นไปใช้โดยไม่ให้เครดิต','เผยแพร่ข้อมูลที่ยังไม่ตรวจสอบ','เคารพชุมชนและให้เครดิตแหล่งข้อมูล','ทิ้งขยะหลังงานประเพณี'], answer:2, explain:'การเคารพชุมชน ตรวจสอบข้อมูล และให้เครดิตช่วยสนับสนุนการสืบสานวัฒนธรรม'}
+];
+let current = 0, score = 0, answered = false;
+const questionText = document.getElementById('questionText');
+const optionsBox = document.getElementById('options');
+const questionCount = document.getElementById('questionCount');
+const scoreLive = document.getElementById('scoreLive');
+const progressBar = document.getElementById('progressBar');
+const feedback = document.getElementById('feedback');
+const nextButton = document.getElementById('nextQuestion');
+const questionArea = document.getElementById('questionArea');
+const quizResult = document.getElementById('quizResult');
+function renderQuestion() {
+  answered = false;
+  const item = questions[current];
+  questionCount.textContent = `ข้อ ${current + 1} จาก ${questions.length}`;
+  scoreLive.textContent = `ตอบถูก ${score} ข้อ`;
+  progressBar.style.width = `${(current / questions.length) * 100}%`;
+  questionText.textContent = item.q;
+  optionsBox.innerHTML = '';
+  feedback.textContent = '';
+  item.options.forEach((option, index) => {
+    const label = document.createElement('label');
+    label.className = 'option';
+    const radio = document.createElement('input');
+    radio.type = 'radio'; radio.name = 'quizAnswer'; radio.value = index;
+    const span = document.createElement('span');
+    span.textContent = `${'กขคง'[index]}. ${option}`;
+    label.append(radio, span);
+    optionsBox.appendChild(label);
+  });
+  nextButton.textContent = 'ตรวจคำตอบ';
+}
+function checkOrNext() {
+  if (!answered) {
+    const selected = document.querySelector('input[name="quizAnswer"]:checked');
+    if (!selected) { feedback.textContent = 'กรุณาเลือกคำตอบก่อนตรวจคำตอบ'; return; }
+    answered = true;
+    const item = questions[current];
+    const correct = Number(selected.value) === item.answer;
+    if (correct) score++;
+    optionsBox.querySelectorAll('input').forEach(input => input.disabled = true);
+    feedback.textContent = (correct ? 'ถูกต้อง! ' : `ยังไม่ถูก คำตอบที่ถูกคือ ${'กขคง'[item.answer]}. `) + item.explain;
+    feedback.style.color = correct ? '#287447' : '#9b3c2f';
+    scoreLive.textContent = `ตอบถูก ${score} ข้อ`;
+    progressBar.style.width = `${((current + 1) / questions.length) * 100}%`;
+    nextButton.textContent = current === questions.length - 1 ? 'ดูผลคะแนน' : 'ข้อต่อไป →';
+  } else if (current < questions.length - 1) {
+    current++;
+    renderQuestion();
+  } else {
+    questionArea.style.display = 'none';
+    document.querySelector('.quiz-progress').style.display = 'none';
+    document.querySelector('.progress-track').style.display = 'none';
+    nextButton.style.display = 'none';
+    quizResult.style.display = 'block';
+    document.getElementById('finalScore').textContent = `${score} / ${questions.length}`;
+    document.getElementById('resultTitle').textContent = score >= 4 ? 'ยอดเยี่ยมมาก!' : score >= 3 ? 'ทำได้ดี ลองทบทวนอีกนิด' : 'ลองเรียนรู้และทำอีกครั้ง';
+    document.getElementById('resultMessage').textContent = `คุณตอบถูก ${score} ข้อจากทั้งหมด ${questions.length} ข้อ สามารถกลับไปอ่านเนื้อหาแล้วลองใหม่ได้`;
+  }
+}
+function resetQuiz() {
+  current = 0; score = 0;
+  questionArea.style.display = 'block';
+  document.querySelector('.quiz-progress').style.display = 'flex';
+  document.querySelector('.progress-track').style.display = 'block';
+  nextButton.style.display = 'inline-flex';
+  quizResult.style.display = 'none';
+  renderQuestion();
+}
+nextButton.addEventListener('click', checkOrNext);
+document.getElementById('restartQuiz').addEventListener('click', resetQuiz);
+document.getElementById('tryAgain').addEventListener('click', resetQuiz);
+renderQuestion();
+</script>
+</body>
+</html>
